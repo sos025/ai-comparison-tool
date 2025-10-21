@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import time
 
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = st.secrets["openai"]["OPENAI_API_KEY"]
 
 st.title("🤖 Ask 3 AIs")
 st.write("Compare speed, cost, and quality!")
